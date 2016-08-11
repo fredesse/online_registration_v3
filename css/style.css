@@ -114,7 +114,6 @@ select	{
   outline: 0;
   padding: 1em;
   width: 100%;
-  background-color: rgb(242, 242, 242);
   color: rgb(128, 128, 128);
   margin-bottom: 2em;
 }
@@ -182,6 +181,10 @@ footer {
 
 .terms a {
 	text-decoration: none;
+}
+
+.terms a:visited {
+	color: rgb(0, 102, 255);
 }
 
 /*------ Button styling ----------*/
@@ -259,7 +262,6 @@ button {
 	float: right;
 	width: 60%;
 	margin: 0;
-	border: none;
 	height: 2em;
 }
 

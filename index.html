@@ -89,7 +89,7 @@
 							<option value="WY">Wyoming</option>
 						</select>
 						<label for="zip">Zip Code</label>
-						<input type="text" id="zip" name="user_zip" minlength="5" maxlength="5">
+						<input type="text" id="zip" name="user_zip" pattern="[0-9]{5}" maxlength="5" title="Please enter a 5 digit zip code">
 					</fieldset>
 				</div>
 				<div class="container">
@@ -112,30 +112,31 @@
 					</fieldset>
 					<button type="submit" id="signup">Sign Up</button>
 				</div>
-				<div class="container">
-					<fieldset class="account">
-						<legend class="h2">Join Us!</legend>
-						<label>For extra content, insider's specials, group events and a lot more <span id="reminder">don't forget to create an account</span></label>
-						<button type="submit" class="fb"><img src="img/f_icon.svg"> Connect with Facebook</button>
-						<button type="submit" class="twtr"><img src="img/twtr.svg"> Connect with Twitter</button>
-						<label id="old-fashioned">Or do it the old-fashioned way</label>
-						<label for="username">Username</label>
-						<input type="text" id="username" name="account_username" placeholder="Required" required>
-						<label for="account_email">Email</label>
-						<input type="email" id="account_email" name="account_email" placeholder="Required" required>
-						<label for="password">Password</label>
-						<input type="password" id="password" name="account_password" minlength="8" placeholder="Required" required>
-						<label for="robot">Prove you are not a robot</label>
-						<div class="captcha clearfix">
-							<p id="border"><img src="img/5.svg"><span class="plus">+</span><img src="img/3.svg"><span class="plus">=</span> </p>
-							<input type="number" id="robot" name="user_robot">
-						</div>
-						<label class="terms">By submitting the form you agree to The Code Review's <a href="#">Terms of Service</a></label>
-					</fieldset>
-					<button type="submit">Create account</button>
-				</div>
 			</form>
-			<!-- Have to add a form with language selection and 'prove you're not a robot' -->
+			<form action="index.html" method="post">	
+			<div class="container">
+				<fieldset class="account">
+					<legend class="h2">Join Us!</legend>
+					<label>For extra content, insider's specials, group events and a lot more <span id="reminder">don't forget to create an account</span></label>
+					<button type="submit" class="fb"><img src="img/f_icon.svg"> Connect with Facebook</button>
+					<button type="submit" class="twtr"><img src="img/twtr.svg"> Connect with Twitter</button>
+					<label id="old-fashioned">Or do it the old-fashioned way</label>
+					<label for="username">Username</label>
+					<input type="text" id="username" name="account_username" minlength="4" placeholder="Required" required>
+					<label for="account_email">Email</label>
+					<input type="email" id="account_email" name="account_email" placeholder="Required" required>
+					<label for="password">Password</label>
+					<input type="password" id="password" name="account_password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Password must contain at least one uppercase letter and number" placeholder="Required" required>
+					<label for="robot">Prove you are not a robot</label>
+					<div class="captcha clearfix">
+						<p id="border"><img src="img/5.svg"><span class="plus">+</span><img src="img/3.svg"><span class="plus">=</span> </p>
+						<input type="number" id="robot" name="user_robot" required>
+					</div>
+					<label class="terms">By submitting the form you agree to The Code Review's <a href="#">Terms of Service</a></label>
+				</fieldset>
+				<button type="submit">Create account</button>
+			</div>
+			</form>
 		</div>
 		<footer>
 			<span>Copyright The Code Review</span>
