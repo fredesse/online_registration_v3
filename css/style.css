@@ -100,7 +100,7 @@ select	{
   border: none;
   border-radius: 3px;
   font-size: 1em;
-  height: 2.5em;
+  height: auto;
   margin: 0;
   outline: 0;
   padding: 1em;
@@ -108,6 +108,10 @@ select	{
   background-color: rgb(242, 242, 242);
   color: rgb(128, 128, 128);
   margin-bottom: 2em;
+}
+
+select {
+	height: 3.188em;
 }
 
 label {
