@@ -126,6 +126,7 @@ select {
 label {
 	display: block;
 	margin-bottom: 10px;
+	line-height: 1.5;
 }
 
 input:focus,
@@ -157,6 +158,26 @@ textarea {
 	height: 8em;
 }
 
+footer {
+	margin-top: 1em;
+	margin-bottom: 5em;
+	color: rgb(128, 128, 128);
+	font-size: .8em;
+	font-style: italic;
+}
+
+#reminder {
+	font-weight: 700;
+	font-style: italic;
+}
+
+#old-fashioned {
+	margin-bottom: 2em;
+}
+
+/*------ Button styling ----------*/
+
+
 button {
 	text-align: center;
 	border-radius: 5px;
@@ -169,33 +190,77 @@ button {
 	border: none;
 }
 
-footer {
-	margin-top: 1em;
-	margin-bottom: 5em;
-	color: rgb(128, 128, 128);
-	font-size: .8em;
-	font-style: italic;
+#signup {
+	margin-bottom: 3em;
+}
+
+.fb {
+	background: rgb(59, 89, 152);
+	margin-top: 2em;
+}
+
+.fb img {
+	height: 1em;
+	width: 1em;
+	margin-right: 1em;
+}
+
+.twtr {
+	background: rgb(29, 161, 242);
+	margin-bottom: 2em;
+}
+
+.twtr img {
+	padding: 0;
+	height: 1em;
+	width: 1em;
+	margin-right: 1em;
 }
 
 
+/*------ Captcha ----------*/
+
+.captcha {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+.captcha img {
+	height: 2em;
+	width: 2em;
+}
+
+.plus {
+	font-size: 2em;
+}
+
+#border {
+	display: inline-block;
+	width: 40%;
+	float: left;
+	text-align: right;
+	margin: 0;
+	height: 2em;
+	padding-right: 1em;
+}
+
+#robot {
+	display: inline-block;
+	float: right;
+	width: 60%;
+	margin: 0;
+	border: none;
+	height: 2em;
+}
 
 
+/* ---- Float clearfix ---- */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.clearfix::after {
+	content: " ";
+	display: table;
+	clear: both;
+}
 
 
 

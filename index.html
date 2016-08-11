@@ -110,21 +110,26 @@
 						<label for="other_topics" class="spacing">Other topics you'd like to hear about</label>
 						<textarea id="other_topics" name="user_topics" placeholder="Let us know!"></textarea>
 					</fieldset>
-					<button type="submit">Sign Up</button>
+					<button type="submit" id="signup">Sign Up</button>
 				</div>
 				<div class="container">
 					<fieldset class="account">
 						<legend class="h2">Join Us!</legend>
-						<label>For extra content, insider's specials, group events and a lot more <span>don't forget to create an account!</span></label>
-						<button type="submit" class="fb"><img src="../img/f_icon.svg"> Connect with Faceook</button>
-						<button type="submit" class="twtr">Connect with Twitter</button>
-						<label>Or do it the old-fashioned</label>
+						<label>For extra content, insider's specials, group events and a lot more <span id="reminder">don't forget to create an account</span></label>
+						<button type="submit" class="fb"><img src="img/f_icon.svg"> Connect with Facebook</button>
+						<button type="submit" class="twtr"><img src="img/twtr.svg"> Connect with Twitter</button>
+						<label id="old-fashioned">Or do it the old-fashioned way</label>
 						<label for="username">Username</label>
 						<input type="text" id="username" name="account_username" placeholder="Required" required>
 						<label for="account_email">Email</label>
 						<input type="email" id="account_email" name="account_email" placeholder="Required" required>
 						<label for="password">Password</label>
-						<input type="password" id="password" name="account_password" placeholder="Required" required>
+						<input type="password" id="password" name="account_password" minlength="8" placeholder="Required" required>
+						<label for="robot">Prove you are not a robot</label>
+						<div class="captcha clearfix">
+							<p id="border"><img src="img/5.svg"><span class="plus">+</span><img src="img/3.svg"><span class="plus">=</span> </p>
+							<input type="number" id="robot" name="user_robot">
+						</div>
 						<label class="terms">By submitting the form you agree to The Code Review's <a href="#">Terms of Service</a></label>
 					</fieldset>
 					<button type="submit">Create account</button>
