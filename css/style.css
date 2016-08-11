@@ -175,6 +175,15 @@ footer {
 	margin-bottom: 2em;
 }
 
+.terms {
+	font-size: .8em;
+	margin-bottom: 2em;
+}
+
+.terms a {
+	text-decoration: none;
+}
+
 /*------ Button styling ----------*/
 
 
@@ -223,6 +232,7 @@ button {
 .captcha {
 	padding-top: 1em;
 	padding-bottom: 1em;
+	margin-bottom: 2em;
 }
 
 .captcha img {
