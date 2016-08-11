@@ -78,16 +78,23 @@ header {
 }
 
 .h2 {
-	margin-top: 1.2em;
+	font-size: 1.5em;
+	display: inline-block;
 	margin-bottom: 1.2em;
+	font-weight: 700;
 }
 
 .newsletter,
 .contact {
-	border-top: 1px solid rgb(43, 43, 59);
 	margin: 3px 0 0 0;
 	padding-right: 0;
 	padding-left: 0;
+}
+
+.container {
+	margin-top: 2px;
+	padding-top: 1.5em;
+	border-top: 1px solid rgb(43, 43, 59);
 }
 
 input[type="text"],
@@ -122,3 +129,61 @@ label {
 input:focus {
 	border: 2px solid rgb(0, 0, 77);
 }
+
+label.radio-checkbox {
+	display: inline;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+	margin-left: 0;
+	margin-right: .5em;
+	margin-bottom: 1em; 
+}
+
+.newsletter label {
+	margin-bottom: 1.2em;
+}
+
+.spacing {
+	margin-top: 1.5em;
+}
+
+#other_topics {
+	height: 8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
