@@ -98,6 +98,10 @@ header {
 	border-top: 1px solid rgb(43, 43, 59);
 }
 
+.container-border {
+	border-bottom: 3px solid rgb(43, 43, 59);
+}
+
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -247,22 +251,25 @@ button {
 	font-size: 2em;
 }
 
-#border {
+#numbers {
 	display: inline-block;
 	width: 40%;
 	float: left;
 	text-align: right;
 	margin: 0;
-	height: 2em;
+	height: 3em;
 	padding-right: 1em;
+	padding-top: 6px;
 }
 
-#robot {
+#validation {
 	display: inline-block;
 	float: right;
 	width: 60%;
 	margin: 0;
-	height: 2em;
+	height: 3em;
+	padding-top: 0;
+	padding-bottom: 0;
 }
 
 
