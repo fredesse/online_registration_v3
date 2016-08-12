@@ -312,14 +312,35 @@ button {
 	.wrapper {
 		max-width: 760px;
 		margin: 0 auto;
+		padding-right: 1em;
+		padding-left: 1em;
 	}
 
 	.col {
 		float: none;
 	}
 
+	.label-style {
+		width: 25%;
+		float: left;
+	}
 
+	.input-style {
+		float: left;
+	}
 
+	input[type="text"],
+	input[type="email"],
+	input[type="number"],
+	input[type="tel"],
+	input[type="password"],
+	select {
+		width: 75%;
+	}
+
+	#zip {
+		width: 30%;
+	}
 
 }
 
