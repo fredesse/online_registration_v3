@@ -135,6 +135,12 @@ label {
 input:focus,
 textarea:focus {
 	border: 2px solid rgb(0, 0, 77);
+	transition: background-color 1.5s ease;
+	background-color: white;
+}
+
+input:invalid {
+	border: 2px solid red;
 }
 
 label.radio-checkbox {
@@ -280,10 +286,6 @@ button {
 	display: table;
 	clear: both;
 }
-
-
-
-
 
 
 
