@@ -95,18 +95,24 @@
 				<div class="container container-border">
 					<fieldset class="newsletter">
 						<legend class="h2">Newsletter</legend>
-						<label>Select the newsletters you would like to receive</label>
-						<input type="checkbox" id="html_news" name="user_news" value="html_news"><label for="html_news" class="radio-checkbox">HTML News</label></br>
-						<input type="checkbox" id="css_news" name="user_news" value="css_news"><label for="css_news" class="radio-checkbox">CSS News</label></br>
-						<input type="checkbox" id="js_news" name="user_news" value="js_news"><label for="js_news" class="radio-checkbox">Javascript News</label>
-						<label class="spacing">Newsletter format</label>
-						<input type="radio" id="html" name="user_newsletter" value="html_newsletter"><label for="html" class="radio-checkbox">HTML</label></br>
-						<input type="radio" id="plain" name="user_newsletter" value="plain_newsletter"><label for="plain" class="radio-checkbox">Plain text</label>
-						<label class="spacing">What language would you prefer?</label>
-						<input type="radio" id="english" name="user_language" value="language_english"><label for="english" class="radio-checkbox">English</label></br>
-						<input type="radio" id="spanish" name="user_language" value="language_spanish"><label for="spanish" class="radio-checkbox">Spanish</label></br>
-						<input type="radio" id="japanese" name="user_language" value="language_japanese"><label for="japanese" class="radio-checkbox">Japanese</label></br>
-						<input type="radio" id="French" name="user_language" value="language_french"><label for="french" class="radio-checkbox">French</label>
+						<div class="column">
+							<div class="col">
+								<label>Select the newsletters you would like to receive</label>
+								<input type="checkbox" id="html_news" name="user_news" value="html_news"><label for="html_news" class="radio-checkbox">HTML News</label></br>
+								<input type="checkbox" id="css_news" name="user_news" value="css_news"><label for="css_news" class="radio-checkbox">CSS News</label></br>
+								<input type="checkbox" id="js_news" name="user_news" value="js_news"><label for="js_news" class="radio-checkbox">Javascript News</label>
+								<label class="spacing">Newsletter format</label>
+								<input type="radio" id="html" name="user_newsletter" value="html_newsletter"><label for="html" class="radio-checkbox">HTML</label></br>
+								<input type="radio" id="plain" name="user_newsletter" value="plain_newsletter"><label for="plain" class="radio-checkbox">Plain text</label>
+							</div>
+							<div class="col">
+								<label class="spacing" id="col-1">What language would you prefer?</label>
+								<input type="radio" id="english" name="user_language" value="language_english"><label for="english" class="radio-checkbox">English</label></br>
+								<input type="radio" id="spanish" name="user_language" value="language_spanish"><label for="spanish" class="radio-checkbox">Spanish</label></br>
+								<input type="radio" id="japanese" name="user_language" value="language_japanese"><label for="japanese" class="radio-checkbox">Japanese</label></br>
+								<input type="radio" id="French" name="user_language" value="language_french"><label for="french" class="radio-checkbox">French</label>
+							</div>
+						</div>
 						<label for="other_topics" class="spacing">Other topics you'd like to hear about</label>
 						<textarea id="other_topics" name="user_topics" placeholder="Let us know!"></textarea>
 					</fieldset>

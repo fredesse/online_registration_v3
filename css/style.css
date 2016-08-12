@@ -159,6 +159,7 @@ input[type="checkbox"] {
 }
 
 .spacing {
+	clear: both;
 	margin-top: 1.5em;
 }
 
@@ -286,6 +287,58 @@ button {
 	display: table;
 	clear: both;
 }
+
+@media (min-width: 540px) {
+
+	.col {
+		float: left;
+		width: 50%;
+		margin-bottom: 1.5em;
+		padding-right: 1em;
+	}
+
+	.spacing {
+	clear: both;
+	}
+
+	#col-1 {
+		margin-top: 0;
+	}
+
+}
+
+@media (min-width: 760px) {
+
+	.wrapper {
+		max-width: 760px;
+		margin: 0 auto;
+	}
+
+	.col {
+		float: none;
+	}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
