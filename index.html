@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -45,7 +45,7 @@
 						</div>
 						<div>
 							<label for="state" class="label-style">State</label>
-							<select id="state" name="user_state" placeholder="Choose State">
+							<select id="state" name="user_state">
 								<option value="" disabled selected hidden>Choose State</option>
 								<option value="AL">Alabama</option>
 								<option value="AK">Alaska</option>
@@ -112,19 +112,19 @@
 						<div class="column">
 							<div class="col">
 								<label>Select the newsletters you would like to receive</label>
-								<input type="checkbox" id="html_news" name="user_news" value="html_news"><label for="html_news" class="radio-checkbox">HTML News</label></br>
-								<input type="checkbox" id="css_news" name="user_news" value="css_news"><label for="css_news" class="radio-checkbox">CSS News</label></br>
+								<input type="checkbox" id="html_news" name="user_news" value="html_news"><label for="html_news" class="radio-checkbox">HTML News</label><br>
+								<input type="checkbox" id="css_news" name="user_news" value="css_news"><label for="css_news" class="radio-checkbox">CSS News</label><br>
 								<input type="checkbox" id="js_news" name="user_news" value="js_news"><label for="js_news" class="radio-checkbox">Javascript News</label>
 								<label class="spacing">Newsletter format</label>
-								<input type="radio" id="html" name="user_newsletter" value="html_newsletter"><label for="html" class="radio-checkbox">HTML</label></br>
+								<input type="radio" id="html" name="user_newsletter" value="html_newsletter"><label for="html" class="radio-checkbox">HTML</label><br>
 								<input type="radio" id="plain" name="user_newsletter" value="plain_newsletter"><label for="plain" class="radio-checkbox">Plain text</label>
 							</div>
 							<div class="col">
 								<label class="spacing" id="col-1">What language would you prefer?</label>
-								<input type="radio" id="english" name="user_language" value="language_english"><label for="english" class="radio-checkbox">English</label></br>
-								<input type="radio" id="spanish" name="user_language" value="language_spanish"><label for="spanish" class="radio-checkbox">Spanish</label></br>
-								<input type="radio" id="japanese" name="user_language" value="language_japanese"><label for="japanese" class="radio-checkbox">Japanese</label></br>
-								<input type="radio" id="French" name="user_language" value="language_french"><label for="french" class="radio-checkbox">French</label>
+								<input type="radio" id="english" name="user_language" value="language_english"><label for="english" class="radio-checkbox">English</label><br>
+								<input type="radio" id="spanish" name="user_language" value="language_spanish"><label for="spanish" class="radio-checkbox">Spanish</label><br>
+								<input type="radio" id="japanese" name="user_language" value="language_japanese"><label for="japanese" class="radio-checkbox">Japanese</label><br>
+								<input type="radio" id="french" name="user_language" value="language_french"><label for="french" class="radio-checkbox">French</label>
 							</div>
 						</div>
 						<label for="other_topics" class="spacing">Other topics you'd like to hear about</label>
@@ -139,8 +139,8 @@
 						<legend class="h2">Join Us!</legend>
 						<label>For extra content, insider's specials, group events and a lot more <span id="reminder">don't forget to create an account</span></label>
 						<div class="clearfix">
-							<button type="submit" class="fb"><img src="img/f_icon.svg"> Connect with Facebook</button>
-							<button type="submit" class="twtr"><img src="img/twtr.svg"> Connect with Twitter</button>
+							<button type="submit" class="fb"><img src="img/f_icon.svg" alt="Facebook logo"> Connect with Facebook</button>
+							<button type="submit" class="twtr"><img src="img/twtr.svg" alt="Twitter logo"> Connect with Twitter</button>
 						</div>
 						<label id="old-fashioned">Or do it the old-fashioned way</label>
 						<div>
@@ -157,7 +157,7 @@
 						</div>
 						<label for="validation">Prove you are not a robot</label>
 						<div class="captcha clearfix">
-							<p id="numbers"><img src="img/5.svg"><span class="plus">+</span><img src="img/3.svg"><span class="plus">=</span> </p>
+							<p id="numbers"><img src="img/5.svg" alt="The number five"><span class="plus">+</span><img src="img/3.svg" alt="The number three"><span class="plus">=</span> </p>
 							<input type="number" id="validation" name="user_robot" required>
 						</div>
 						<label class="terms">By submitting the form you agree to The Code Review's <a href="#">Terms of Service</a></label>
