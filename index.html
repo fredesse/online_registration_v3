@@ -25,27 +25,27 @@
 						<legend class="h2">Contact information</legend>
 						<div>
 							<label for="name" class="label-style">Full Name</label>
-							<input class="input-style" type="text" id="name" name="user_name" placeholder="Required" required>
+							<input type="text" id="name" name="user_name" placeholder="Required" required>
 						</div>
 						<div>
 							<label for="email" class="label-style">Email Address</label>
-							<input class="input-style" type="email" id="email" name="user_email" placeholder="Required" required>
+							<input type="email" id="email" name="user_email" placeholder="Required" required>
 						</div>
 						<div>
 							<label for="number" class="label-style">Phone Number</label>
-							<input class="input-style" type="tel" id="number" name="user_number" placeholder="+1 (234) 567-8910" minlength="10" maxlength="11">
+							<input type="tel" id="number" name="user_number" placeholder="+1 (234) 567-8910" minlength="10" maxlength="11">
 						</div>
 						<div>
 							<label for="address" class="label-style">Street Address</label>
-							<input class="input-style" type="text" id="address" name="user_address">
+							<input type="text" id="address" name="user_address">
 						</div>
 						<div>
 							<label for="city" class="label-style">City</label>
-							<input class="input-style" type="text" id="city" name="user_city">
+							<input type="text" id="city" name="user_city">
 						</div>
 						<div>
 							<label for="state" class="label-style">State</label>
-							<select class="input-style" id="state" name="user_state" placeholder="Choose State">
+							<select id="state" name="user_state" placeholder="Choose State">
 								<option value="" disabled selected hidden>Choose State</option>
 								<option value="AL">Alabama</option>
 								<option value="AK">Alaska</option>
@@ -102,7 +102,7 @@
 						</div>
 						<div>
 							<label for="zip" class="label-style">Zip Code</label>
-							<input class="input-style" type="text" id="zip" name="user_zip" pattern="[0-9]{5}" maxlength="5" title="Please enter a 5 digit zip code">
+							<input type="text" id="zip" name="user_zip" pattern="[0-9]{5}" maxlength="5" title="Please enter a 5 digit zip code">
 						</div>
 					</fieldset>
 				</div>
@@ -138,20 +138,22 @@
 					<fieldset class="account">
 						<legend class="h2">Join Us!</legend>
 						<label>For extra content, insider's specials, group events and a lot more <span id="reminder">don't forget to create an account</span></label>
-						<button type="submit" class="fb"><img src="img/f_icon.svg"> Connect with Facebook</button>
-						<button type="submit" class="twtr"><img src="img/twtr.svg"> Connect with Twitter</button>
+						<div class="clearfix">
+							<button type="submit" class="fb"><img src="img/f_icon.svg"> Connect with Facebook</button>
+							<button type="submit" class="twtr"><img src="img/twtr.svg"> Connect with Twitter</button>
+						</div>
 						<label id="old-fashioned">Or do it the old-fashioned way</label>
 						<div>
 							<label for="username" class="label-style">Username</label>
-							<input class="input-style" type="text" id="username" name="account_username" minlength="4" placeholder="Required" required>
+							<input type="text" id="username" name="account_username" minlength="4" placeholder="Required" required>
 						</div>
 						<div>
 							<label for="account_email" class="label-style">Email</label>
-							<input class="input-style" type="email" id="account_email" name="account_email" placeholder="Required" required>
+							<input type="email" id="account_email" name="account_email" placeholder="Required" required>
 						</div>
 						<div>
 							<label for="password" class="label-style">Password</label>
-							<input class="input-style" type="password" id="password" name="account_password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Password must contain at least one uppercase letter and number" placeholder="Required" required>
+							<input type="password" id="password" name="account_password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" title="Password must contain at least one uppercase letter and number" placeholder="Required" required>
 						</div>
 						<label for="validation">Prove you are not a robot</label>
 						<div class="captcha clearfix">
