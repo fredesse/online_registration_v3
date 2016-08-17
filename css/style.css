@@ -109,7 +109,7 @@ input[type="tel"],
 input[type="password"],
 textarea,
 select	{
-  background: rgb(242, 242, 242);
+  /*background: rgb(242, 242, 242);*/
   border: none;
   border-radius: 3px;
   font-size: 1em;
@@ -120,6 +120,11 @@ select	{
   width: 100%;
   color: rgb(128, 128, 128);
   margin-bottom: 2em;
+  background-size: 200% 100%;
+  background-image: linear-gradient(to right, rgb(242, 242, 242) 50%, white 50%);
+  -webkit-transition: background-position 1s;
+  -moz-transition: background-position 1s;
+  transition: background-position 1s;
 }
 
 select {
@@ -135,8 +140,7 @@ label {
 input:focus,
 textarea:focus {
 	box-shadow: inset 0 0 5px rgb(0, 0, 77);
-	transition: background-color 1.5s ease;
-	background-color: white;
+	background-position: -100% 0;
 }
 
 input:invalid {
